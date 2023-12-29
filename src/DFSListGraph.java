@@ -4,6 +4,7 @@ import java.util.List;
 public class DFSListGraph {
     static List<List<Integer>> adjList;
     static boolean[] visited;
+
     public static void main(String[] args) {
         int[][] inputArr = {{0,1},{0,2},{1,3},{2,3},{2,4}};
         int node_n = 5;
@@ -15,6 +16,7 @@ public class DFSListGraph {
         for(int[] a : inputArr){
             addEdge(a[0],a[1]);
         }
+
         dfs(3);
 
     }
